@@ -9,4 +9,4 @@ spec:
     ports:
     - containerPort: 80
   - name: webwatcher
-    image: afakharany/watcher:latest
+    image: afakharany/watcher:latest]]
