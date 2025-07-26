@@ -1,21 +1,14 @@
-# appversion: v1
-# kind: Pod
-# metadata:
-#   name: nginx-web-pod
-# spec:
-#   containers:
-#     - name: nginx-dock-con
-#       image: nginx
-#       ports:
-#         - containerPort:80
-
 apiVersion: v1
 kind: Pod
 metadata:
   name: nginx-pod
+  labels:
+    app: nginx-web
+  annotations:
+    description: "Nginx pod for learning purposes"
 spec:
   containers:
-    - name: nginx-container
-      image: nginx
+    - name: nginx
+      image: nginx:latest
       ports:
-        - containerPort: 80
+        - containerPort: 8081
