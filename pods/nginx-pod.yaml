@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: nginx-pod
   labels:
-    app: nginx-web
+    app: nginx
   annotations:
     description: "Nginx pod for learning purposes"
 spec:
@@ -13,4 +13,3 @@ spec:
       ports:
         - containerPort: 80
           name: nginx-srv-port
-

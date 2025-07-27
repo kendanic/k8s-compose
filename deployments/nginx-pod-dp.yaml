@@ -7,7 +7,7 @@ metadata:
   annotations:
     description: "Nginx deployment for learning purposes"
 spec:
-  replicas: 2
+  replicas: 0
   selector:
     matchLabels:
       app: nginx-web
@@ -20,4 +20,4 @@ spec:
         - name: nginx
           image: nginx:latest
           ports:
-            - containerPort: 8081
+            - containerPort: 80

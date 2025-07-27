@@ -3,10 +3,12 @@ kind: Service
 metadata:
   name: nginx-service
   labels:
-    app: nginx-nginx-web
+    app: nginx
 spec:
   type: NodePort
   ports:
     - port: 80
       protocol: TCP
       targetPort: nginx-srv-port
+selector:
+  app: nginx
