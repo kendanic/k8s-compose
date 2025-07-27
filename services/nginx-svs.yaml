@@ -9,6 +9,4 @@ spec:
   ports:
     - port: 80
       protocol: TCP
-      targetPort: 8081
-  selector:
-    app: nginx-web
+      targetPort: nginx-srv-port

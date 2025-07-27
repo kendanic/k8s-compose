@@ -11,4 +11,6 @@ spec:
     - name: nginx
       image: nginx:latest
       ports:
-        - containerPort: 8081
+        - containerPort: 80
+          name: nginx-srv-port
+
