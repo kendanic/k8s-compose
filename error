@@ -1,0 +1,7 @@
+ken@RAD-IT-L13:~$ kubectl apply -f kubernetes-project/services/nginx-svs.yaml 
+The request is invalid: patch: Invalid value: "map[metadata:map[annotations:map[kubectl.kubernetes.io/last-applied-configuration:{\"apiVersion\":\"v1\",\"kind\":\"Service\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"nginx\"},\"name\":\"nginx-service\",\"namespace\":\"default\"},\"selector\":{\"app\":\"nginx\"},\"spec\":{\"ports\":[{\"port\":80,\"protocol\":\"TCP\",\"targetPort\":\"nginx-srv-port\"}],\"type\":\"NodePort\"}}\n] labels:map[app:nginx]] selector:map[app:nginx]]": strict decoding error: unknown field "selector"
+ken@RAD-IT-L13:~$ 
+
+
+  selector:
+    app: nginx
