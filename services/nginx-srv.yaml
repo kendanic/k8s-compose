@@ -9,6 +9,7 @@ spec:
   ports:
     - port: 8001
       protocol: TCP
-      targetPort: nginx-srv-port
+      # targetPort: nginx-srv-port
+      targetPort: 9375
   selector:
     app: nginx
