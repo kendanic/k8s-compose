@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: service
+metadata:
+  name: client-cluster-ip-service
+spec:
+  type: ClusterIp
+  selector:
+    component: ken
+  ports:
+    - name: client-cluster-node-port
+      port: 3000
+      targetPort: 3000
