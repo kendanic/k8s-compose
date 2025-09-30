@@ -11,3 +11,12 @@ kubernetes-project/
 │── secrets/
 │── volumes/
 
+
+
+Steps to create Kubernetes master node
+
+Update and install dependencies
+
+
+
+
