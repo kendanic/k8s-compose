@@ -9,15 +9,11 @@ spec:
       component: ken
   template:
     metadata:
-      label:
+      labels:
         component: ken
     spec:
       containers:
         - name: client
-      image: stephengrider/multi-client
-      # resources:
-      #   limits:
-      #     memory: "128Mi"
-      #     cpu: "500m"
-      ports:
-        - containerPort: 3000
+          image: stephengrider/multi-client
+          ports:
+            - containerPort: 3000

@@ -1,9 +1,9 @@
-apiVersion: apps/v1
-kind: service
+apiVersion: v1
+kind: Service
 metadata:
-  name: client-cluster-ip-service
+  name: client-deployment
 spec:
-  type: ClusterIp
+  type: ClusterIP
   selector:
     component: ken
   ports:
