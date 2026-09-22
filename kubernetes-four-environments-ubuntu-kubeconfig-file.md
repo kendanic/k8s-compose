@@ -414,6 +414,7 @@ helm list --kube-context staging -n <namespace>
 kubectl config get-contexts
 
 # Show active context
+## Very imporant to run before configuration
 kubectl config current-context
 
 # Switch environment
